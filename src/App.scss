@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans&display=swap');
+$family : 'Rethink Sans',
+sans-serif;
+$text_Color : #141238;
+$button_BgColor : linear-gradient(90deg ,rgb(14, 50, 160), rgba(18, 40, 96, 0.694));
+$button_TextColor : white;
+$button_BorderColor : rgb(116, 49, 184);
+
+
+.nav--head {
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.nav--menus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+li{
+  list-style: none;
+}
+.li {
+  list-style: none;
+  font-family: $family;
+  text-decoration: none;
+  transition: 200ms;
+  font-size: 1.2em;
+}
+.li:hover{
+  color: $button_BorderColor;
+}
+
+@media only screen and (max-width : 768px) {
+  .nav--menus {
+    display: none;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap');
+
+.logo {
+  font-size: 3em;
+  font-family: 'Overlock SC', sans-serif;
+  color: $button_BorderColor;
+  text-shadow: $button_BorderColor 0 0 10px;
+}
+.master{
+  padding: 40px 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-flow: wrap;
+}
+.right{
+  max-width: 100%;
+  width: 700px;
+  height: auto;
+}
+.left{
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  gap: 2px;
+  padding: 40px;  
+  max-width: 100%;
+  width: 500px;
+}

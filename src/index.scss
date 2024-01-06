@@ -1,0 +1,52 @@
+@use "app";
+body{
+    margin: auto 0;
+}
+#root{
+    background-image: url("./assets/simple-blue-white-background-with-text-space.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto 0;
+}
+
+.doFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.one{
+    font-family: app.$family ;
+    font-size: 6em;
+    word-break: none;
+}
+.two{
+    font-family: app.$family;
+    font-size: 1.7em;
+     color: #282828;
+    font-weight: 600;
+}
+.three{
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #5a5959;
+    font-family: app.$family;
+}
+
+button{
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 10px;
+    width: 100%;
+    background: app.$button_BgColor;    
+    color: white;
+}
+button:hover{
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    background: transparent;    
+    color: black;
+    border: 1px solid app.$button_BorderColor;
+}
