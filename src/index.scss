@@ -1,4 +1,4 @@
-@use "./app.scss";
+@import "./App.scss";
 body{
     margin: auto 0;
 }
@@ -16,12 +16,12 @@ body{
     gap: 10px;
 }
 .one{
-    font-family: app.$family ;
+    font-family: App.$family ;
     font-size: 6em;
     word-break: none;
 }
 .two{
-    font-family: app.$family;
+    font-family: App.$family;
     font-size: 1.7em;
      color: #282828;
     font-weight: 600;
@@ -30,7 +30,7 @@ body{
     font-size: 1.4em;
     font-weight: 600;
     color: #5a5959;
-    font-family: app.$family;
+    font-family: App.$family;
 }
 
 button{
@@ -38,7 +38,7 @@ button{
     border: 1px solid;
     border-radius: 10px;
     width: 100%;
-    background: app.$button_BgColor;    
+    background: App.$button_BgColor;    
     color: white;
 }
 button:hover{
@@ -48,5 +48,5 @@ button:hover{
     width: 100%;
     background: transparent;    
     color: black;
-    border: 1px solid app.$button_BorderColor;
+    border: 1px solid App.$button_BorderColor;
 }
